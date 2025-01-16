@@ -66,7 +66,7 @@ init()
 		setDvar( "bots_team_mode", 0 ); //counts just bots when 1
 
 	if ( getDvar( "bots_skill" ) == "" )
-		setDvar( "bots_skill", 9 ); //0 is random, 1 is easy 7 is hard, 8 is custom, 9 is completely random
+		setDvar( "bots_skill", 0 ); //0 is random, 1 is easy 7 is hard, 8 is custom, 9 is completely random
 
 	if ( getDvar( "bots_skill_axis_hard" ) == "" )
 		setDvar( "bots_skill_axis_hard", 0 ); //amount of hard bots on axis team
