@@ -66,7 +66,7 @@ init()
 		setDvar( "bots_team_mode", 0 ); //counts just bots when 1
 
 	if ( getDvar( "bots_skill" ) == "" )
-		setDvar( "bots_skill", 0 ); //0 is random, 1 is easy 7 is hard, 8 is custom, 9 is completely random
+		setDvar( "bots_skill", 9 ); //0 is random, 1 is easy 7 is hard, 8 is custom, 9 is completely random
 
 	if ( getDvar( "bots_skill_axis_hard" ) == "" )
 		setDvar( "bots_skill_axis_hard", 0 ); //amount of hard bots on axis team
@@ -93,10 +93,10 @@ init()
 		setDvar( "bots_loadout_allow_op", true );
 
 	if ( getDvar( "bots_loadout_rank" ) == "" ) // what rank the bots should be around, -1 is around the players, 0 is all random
-		setDvar( "bots_loadout_rank", -1 );
+		setDvar( "bots_loadout_rank", 0 );
 
 	if ( getDvar( "bots_loadout_prestige" ) == "" ) // what pretige the bots will be, -1 is the players, -2 is random
-		setDvar( "bots_loadout_prestige", -1 );
+		setDvar( "bots_loadout_prestige", -2 );
 
 	if ( getDvar( "bots_play_move" ) == "" ) //bots move
 		setDvar( "bots_play_move", true );
